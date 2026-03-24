@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function Card() {
+export default function Card({username , btnText ="Price" }) {
+    console.log(username);
   return (
     <div
       className="flex flex-col rounded-xl  p-4"
@@ -22,8 +23,8 @@ export default function Card() {
       </div>
       <div className="flex flex-col  rounded-b-xl py-4 ">
         <div className="flex justify-between">
-          <h1 className="font-RubikBold ">Bored ape nft accidental</h1>
-          <h1 className="font-bold font-RubikBold">Price</h1>
+          <h1 className="font-RubikBold ">{username}</h1>
+          <h1 className="font-bold font-RubikBold">{btnText}</h1>
         </div>
         <div className="flex  justify-between font-mono">
           <p>#345</p>
